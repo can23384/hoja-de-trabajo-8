@@ -6,6 +6,7 @@ public class Main {
         PriorityQueue<Paciente> emergencyQueue = new PriorityQueue<>(Comparator.comparing(Paciente::getCodigoEmergencia));
         String line;
 
+        //Implementar el archivo
         try (BufferedReader br = new BufferedReader(new FileReader("pacientes.txt"))) {
             while ((line = br.readLine()) != null) {
                 String[] parts = line.split(",");
